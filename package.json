@@ -8,8 +8,8 @@
     "start": "electron main.js",
     "dev": "node server.js",
     "postinstall": "webpack -p --config webpack.config.js",
-    "build-all": "electron-packager ./ KommunistDiscord --all --version=2.0.2 --out=./release --overwrite",
-    "build-win": "electron-packager ./ KommunistDiscord --win32 --version=2.0.2 --out=./release --overwrite"
+    "build-all": "electron-packager ./ kommunistdiscord --all --electron-version=2.0.2 --out=./release --overwrite --ignore=\".cache-loader\"",
+    "build-win": "electron-packager ./ kommunistdiscord --platform=win32 --arch=all --electron-version=2.0.2 --out=./release --overwrite --ignore=\".cache-loader\""
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
@@ -20,6 +20,8 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.28.11",
     "electron-prebuilt": "^1.4.13",
+    "electron": "^2.0.2",
+    "electron-packager": "^12.1.0",
     "express": "^4.13.4",
     "json-loader": "^0.5.7",
     "node-sass": "^4.9.0",
@@ -42,8 +44,6 @@
     "classnames": "^2.2.6",
     "concurrently": "^3.5.1",
     "discord.js": "^11.3.2",
-    "electron": "^2.0.2",
-    "electron-packager": "^12.1.0",
     "raw-loader": "^0.5.1",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",

@@ -1,8 +1,0 @@
-{
-  "presets": [["env", {
-    "targets": {
-      "browsers": ["chrome >=61"]
-    }
-  }], "es2017", "react"],
-  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
-}

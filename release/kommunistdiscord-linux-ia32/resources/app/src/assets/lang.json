@@ -1,0 +1,12 @@
+{
+    "ru": {
+        "login-title":"Логин в Discord",
+        "login":"Логин",
+        "password":"Пароль"
+    },
+    "en": {
+        "login-title":"Login to Discord",
+        "login":"Login",
+        "password":"Password"
+    }
+}
